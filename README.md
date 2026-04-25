@@ -116,34 +116,7 @@ npm run dev
 | Validation | express-validator |
 | Deployment | Vercel (frontend) + Render (backend) |
 
----
 
-## 🚀 Deployment
-
-**Backend → Render.com**
-1. Push `backend/` to GitHub
-2. New Web Service → connect repo
-3. Build: `npm install` · Start: `npm start`
-4. Add environment variables from `backend/.env`
-
-**Frontend → Vercel**
-1. Push `frontend/` to GitHub
-2. New Project → import repo
-3. Set `REACT_APP_API_URL` = your Render backend URL
-
----
-
-## ❌ Error Format
-
-All API errors follow a consistent structure:
-
-```json
-{
-  "success": false,
-  "status": "fail",
-  "message": "Task not found."
-}
-```
 
 ---
 
