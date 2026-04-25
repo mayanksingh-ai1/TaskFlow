@@ -3,7 +3,7 @@ import { taskAPI } from '../api';
 import { useAuth } from '../context/AuthContext';
 import TaskForm from '../components/common/TaskForm';
 import ConfirmModal from '../components/common/ConfirmModal';
-import StatusBadge from '../components/common/StatusBadge';
+// import StatusBadge from '../components/common/StatusBadge';
 import PriorityBadge from '../components/common/PriorityBadge';
 import toast from 'react-hot-toast';
 import './Tasks.css';
