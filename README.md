@@ -61,8 +61,9 @@ JWT_SECRET=replace_this_with_a_long_random_secret_string
 JWT_EXPIRE=7d
 NODE_ENV=development
 CLIENT_URL=http://localhost:3000
+```
 
-
+```
 ###  Configure Frontend environment
 ```bash
 cp .env.example .env
@@ -71,6 +72,7 @@ cp .env.example .env
 Edit `.env`:
 ```env
 REACT_APP_API_URL=http://localhost:5000/api
+```
 ```
 
 - Frontend → http://localhost:3000
