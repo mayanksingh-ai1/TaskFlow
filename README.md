@@ -43,6 +43,36 @@ npm run install-all
 npm run dev
 ```
 
+
+### Configure Backend environment variables
+
+Copy the example file and fill in your values:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env`:
+
+```env
+PORT=5000
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/taskmanager?retryWrites=true&w=majority
+JWT_SECRET=replace_this_with_a_long_random_secret_string
+JWT_EXPIRE=7d
+NODE_ENV=development
+CLIENT_URL=http://localhost:3000
+
+
+###  Configure Frontend environment
+```bash
+cp .env.example .env
+```
+
+Edit `.env`:
+```env
+REACT_APP_API_URL=http://localhost:5000/api
+```
+
 - Frontend → http://localhost:3000
 - Backend  → http://localhost:5000
 
