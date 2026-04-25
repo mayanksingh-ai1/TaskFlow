@@ -50,19 +50,12 @@ task-manager-frontend/
 └── package.json
 ```
 
----
 
-## ⚙️ Setup — Step by Step
 
 ### Prerequisites
 - Node.js v18+
 - Backend server running at `http://localhost:5000`
 
-### Step 1 — Install dependencies
-```bash
-cd task-manager-frontend
-npm install
-```
 
 ### Step 2 — Configure environment
 ```bash
@@ -73,7 +66,7 @@ Edit `.env`:
 ```env
 REACT_APP_API_URL=http://localhost:5000/api
 ```
-For production, set this to your deployed backend URL.
+
 
 ### Step 3 — Start the app
 ```bash
@@ -107,28 +100,7 @@ Opens at `http://localhost:3000`
 | `/unauthorized`    | Any          | 403 page                            |
 | `*`                | Any          | 404 Not Found                       |
 
----
 
-## 🎨 Design System
-
-- **Fonts**: Syne (display/headings) + DM Sans (body)
-- **Theme**: Dark — `#0f0f13` background, `#7c6af7` accent
-- **CSS Variables**: All colors/spacing in `:root` in `index.css`
-- **Animations**: `fadeUp`, `fadeIn`, `slideIn`, `shimmer` keyframes
-- **Components**: `.btn`, `.card`, `.badge`, `.form-input`, `.modal`, `.spinner` — all global
-
----
-
-## 🚀 Deployment (Vercel)
-
-1. Push frontend to GitHub
-2. Go to https://vercel.com → New Project → Import repo
-3. Set **Framework Preset**: Create React App
-4. Add Environment Variable:
-   - `REACT_APP_API_URL` = your deployed backend URL (e.g. `https://your-api.onrender.com/api`)
-5. Deploy
-
-> Make sure CORS on your backend allows the Vercel domain.
 
 ---
 
