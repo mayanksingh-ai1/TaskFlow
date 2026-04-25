@@ -1,0 +1,16 @@
+{
+  "name": "taskflow-fullstack",
+  "version": "1.0.0",
+  "description": "TaskFlow — Full Stack MERN Task Management System",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

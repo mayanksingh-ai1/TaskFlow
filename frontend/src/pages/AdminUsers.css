@@ -1,0 +1,44 @@
+.admin-users-page { display: flex; flex-direction: column; gap: 24px; }
+
+.user-cell { display: flex; align-items: center; gap: 10px; }
+
+.user-avatar-sm {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--accent-glow);
+  border: 1px solid rgba(124,106,247,0.3);
+  color: var(--accent-2);
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.user-cell-name {
+  font-size: 14px; font-weight: 500;
+  display: flex; align-items: center; gap: 6px;
+}
+.user-cell-email { font-size: 12px; color: var(--text-2); }
+
+.you-label {
+  font-size: 10px; font-weight: 700;
+  background: var(--accent-glow); color: var(--accent-2);
+  padding: 1px 6px; border-radius: 99px;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+}
+
+.status-dot {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 500;
+}
+.status-dot::before {
+  content: '';
+  width: 7px; height: 7px; border-radius: 50%;
+  display: inline-block;
+}
+.status-dot.active::before  { background: var(--green); box-shadow: 0 0 6px var(--green); }
+.status-dot.inactive::before { background: var(--text-3); }
+
+/* Reuse pagination + task-actions from Tasks.css via global index.css */
+.filter-select { width: auto; min-width: 150px; }
