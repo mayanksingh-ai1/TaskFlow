@@ -34,6 +34,8 @@ role     : superadmin
 ## ⚡ Quick Start
 
 ```bash
+git clone https://github.com/mayanksingh-ai1/TaskFlow.git
+cd TaskFlow
 # 1. Install all dependencies (root + backend + frontend)
 npm run install-all
 
