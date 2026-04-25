@@ -73,7 +73,7 @@ Edit `.env`:
 ```env
 REACT_APP_API_URL=http://localhost:5000/api
 ```
-```
+
 
 - Frontend → http://localhost:3000
 - Backend  → http://localhost:5000
